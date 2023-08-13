@@ -267,6 +267,8 @@ body .main__dashboard .filter__table .filter .filter__input > input {
   outline: none;
 }
 body .main__dashboard .filter__table .table {
+  max-width: 100%;
+  overflow-x: scroll;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -306,4 +308,57 @@ body .main__dashboard .filter__table .table .rows__data {
   display: flex;
   align-items: start;
   flex-direction: column;
+}
+body .main__dashboard .filter__table .table .rows__data .heading__row {
+  background: #FAFAFC;
+}
+body .main__dashboard .filter__table .table .rows__data .row {
+  padding: 10px 20px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main__dashboard .filter__table .table .rows__data .row .data {
+  width: 100px;
+}
+body .main__dashboard .filter__table .table .rows__data .row .data span {
+  color: rgba(50, 71, 92, 0.87);
+  font-family: Public Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.17px;
+  text-transform: uppercase;
+}
+body .main__dashboard .filter__table .table .rows__data .row .data .user__id {
+  color: var(--primary-color);
+}
+body .main__dashboard .filter__table .table .rows__data .row .check {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main__dashboard .filter__table .table .rows__data .row .client__name {
+  width: 150px;
+}
+body .main__dashboard .filter__table .table .rows__data .row .paid {
+  border-radius: 50px;
+  padding: 6px 10px;
+  background-color: rgba(114, 225, 40, 0.1215686275);
+  color: #71DD37 !important;
+  font-family: Public Sans;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+body .main__dashboard .filter__table .table::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body .main__dashboard .filter__table .table::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color), #FF6969;
 }/*# sourceMappingURL=style.css.map */
